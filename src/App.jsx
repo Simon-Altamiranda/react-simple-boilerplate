@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-
+import FilterableProductTable from './componentes/FilterableProductTable.js'
 class App extends Component {
   render() {
     return (
-      <h1>Hello React ariel :)</h1>
+      <FilterableProductTable/>
     );
   }
 }
