@@ -13,7 +13,6 @@ class Formulario extends React.component{
             direccion:'',
             telefono:'',
             sexo:'',
-
         };
     }
 
@@ -46,33 +45,33 @@ class Formulario extends React.component{
                 <CardHeader
                     title="Formulario de ingreso"
                     subtitle="El usuario debera llenar este formulario sin excepcion"
-            />
-            <CardText expanded={true}>
-                <form>
-                    <TextField floatingLabelText="Nombre completo"/><br/>    
-                    <TextField floatingLabelText="Direccion"/><br/>    
-                    <TextField floatingLabelText="Telefono"/><br/>    
-                    <TextField floatingLabelText="Email"/><br/>    
-                    <TextField defaultValue="Valor Opcional"/><br/>
-                    <SelectField
-                        floatingLabelText = "Sexo"
-                        value={this.state.formulario.sexo}
-                    >
-                        <MenuItem value={1} primaryText="Masculino"/>
-                        <MenuItem value={2} primaryText="Femenino"/>
-                        <MenuItem value={3} primaryText="Decano"/>
-                    </SelectField>
-                    <input
-                    type='text'
-                    valor= 'valor por defecto'
-                    ref={(objRef)=>{this.referenciaInput=objRef}}
-                    />
-                </form>
-            </CardText>
-            <CardActions>
-             <FlatButton label = "imprimir State" onClick= {this.handleClick}>
-            </CardActions>
-             </card>
+                />
+                <CardText expanded={true}>
+                    <form>
+                        <TextField floatingLabelText="Nombre completo"/><br/>    
+                        <TextField floatingLabelText="Direccion"/><br/>    
+                        <TextField floatingLabelText="Telefono"/><br/>    
+                        <TextField floatingLabelText="Email"/><br/>    
+                        <TextField defaultValue="Valor Opcional"/><br/>
+                        <SelectField
+                            floatingLabelText = "Sexo"
+                            value={this.state.formulario.sexo}
+                        >
+                            <MenuItem value={1} primaryText="Masculino"/>
+                            <MenuItem value={2} primaryText="Femenino"/>
+                            <MenuItem value={3} primaryText="Decano"/>
+                        </SelectField>
+                        <input
+                        type='text'
+                        valor= 'valor por defecto'
+                        ref={(objRef)=>{this.referenciaInput=objRef}}
+                        />
+                    </form>
+                </CardText>
+                <CardActions>
+                    <FlatButton label = "imprimir State" onClick= {this.handleClick}>
+                </CardActions>
+            </Card>
         );
     }
 }
