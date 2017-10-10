@@ -1,9 +1,26 @@
 import React, {Component} from 'react';
-import FilterableProductTable from './componentes/FilterableProductTable.js'
+import Formulario from './ejemplo/Formulario';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 class App extends Component {
+  constructor(){
+    this.state= {mensaje:'ingrese valores en el formulario y presione ok'}
+  }
+  handleOk = (valores) => {
+    this.setState({mensaje:`se envio el formulario de ${valores.nombre}`})
+
+  }
   render() {
     return (
-      <FilterableProductTable/>
+      <MuiThemeProvider>
+        <div>
+          <div>
+            {this.state.mensaje}
+          </div>  
+      <Formulario
+        onOk = {this.handleOk}
+      />
+      </div>
+      </MuiThemeProvider>
     );
   }
 }
