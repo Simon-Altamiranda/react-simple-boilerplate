@@ -4,12 +4,12 @@ import Home from './Home'
 import SubRuta from './SubRuta'
 import Schedule from './Schedule'
 const Main = () => (
-    <Main>
+    <main>
         <Switch>
-            <Route exact path='/' component = {Home}>
-            <Route path='/jugadores' component = {Subruta}>
-            <Route path='/schedule' component = {Schedule}>
+            <Route exact path='/' component = {Home}/>
+            <Route path='/jugadores' component = {SubRuta}/>
+            <Route path='/schedule' component = {Schedule}/>
         </Switch>
-    </Main>
+    </main>
 )
 export default Main 

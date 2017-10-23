@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card, CardActions, CardHeader,CardText} from 'material-ui/Card';
 
-const Home = => (
+const Home = () => (
     <div style= {{paddingLeft:260 } }>
         <Card style={{
             height:800
