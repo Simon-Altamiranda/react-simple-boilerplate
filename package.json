@@ -35,13 +35,14 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.4"
+    "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
     "babel-loader": "^7.0.0",
     "material-ui": "^0.19.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.2.2"
   },
   "main": "server.js"
 }
